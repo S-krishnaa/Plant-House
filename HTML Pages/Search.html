@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search </title>
+  <style>
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      width: 300px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-left: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    body{
+      opacity: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-container">
+    <form action="/search" method="GET">
+      <input type="text" name="query" placeholder="Search...">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+
+</body>
+</html>
